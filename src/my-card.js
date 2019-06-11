@@ -2,8 +2,12 @@ import { LitElement, html, css } from "lit-element";
 
 class MyCard extends LitElement {
   static get styles() {
-    return css`
-      :host {
+    return [
+      css`
+        :host {
+          display: block;
+        }
+
         .directory__wrapper--card {
           width: 210px;
           height: 16rem;
@@ -44,8 +48,8 @@ class MyCard extends LitElement {
         .card__description {
           color: #575756;
         }
-      }
-    `;
+      `
+    ];
   }
 
   static get properties() {
