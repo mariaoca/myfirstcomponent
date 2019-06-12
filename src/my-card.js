@@ -55,18 +55,15 @@ class MyCard extends LitElement {
   static get properties() {
     return {
       title: { type: String },
-      subtitle: { type: String }
+      subtitle: { type: String },
+      link: { type: String }
     };
   }
 
   render() {
     return html`
       <article class="directory__wrapper--card">
-        <a
-          class="main__directory--link"
-          target="blank"
-          href="http://kairosnav.westeurope.cloudapp.azure.com:8081/Account/Principal.aspx"
-        >
+        <a class="main__directory--link" target="blank" href=${this.link}>
           <div class="card__wrapper">
             <div class="card__icon">
               <i class="far fa-clock"></i>
