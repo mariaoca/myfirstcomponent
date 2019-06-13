@@ -56,8 +56,14 @@ class MyCard extends LitElement {
     return {
       title: { type: String },
       subtitle: { type: String },
-      link: { type: String }
+      link: { type: String },
+      category: { type: String }
     };
+  }
+  constructor() {
+    super();
+    this.title = "Título";
+    this.subtitle = "Descripción/subtítulo";
   }
 
   render() {
